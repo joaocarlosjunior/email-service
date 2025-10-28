@@ -7,6 +7,8 @@ O objetivo principal é criar uma aplicação REST capaz de processar requisiç�
 
 A aplicação foi construída em **Spring Boot 3**, utilizando princípios de **arquitetura em camadas**, **boas práticas de código limpo (Clean Code)**, **padrões de projeto (Design Patterns)** e **testes automatizados** em múltiplos níveis (unitário, integração e end-to-end).
 
+Descrição do Desafio: [Desafio Back-end Viasoft.pdf](https://github.com/joaocarlosjunior/email-service/blob/main/Desafio%20Back-end%20Viasoft.pdf)
+
 ---
 
 ## 🎯 Objetivo do Desafio (Conforme PDF da Viasoft)
