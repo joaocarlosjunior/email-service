@@ -114,7 +114,7 @@ O projeto foi desenvolvido com foco em qualidade de código e cobertura de teste
 
 ## 📊 Relatórios de Qualidade
 ### 📈 JaCoCo Report
-Gera o relatório de cobertura de código.
+Gera o relatório de cobertura de testes de código.
 
 Relatório JaCoCo:
 
@@ -127,6 +127,22 @@ Executa testes de mutação para medir a robustez dos testes.
 Relatório PITest:
 
 <img width="1910" height="644" alt="Image" src="https://github.com/user-attachments/assets/46b6e178-1081-46d2-abb8-5b95fabda646" />
+
+#### 🧬 Observações sobre o Relatório do PIT
+
+O relatório do **PIT Mutation Testing** atingiu quase 100% de cobertura de mutação, com apenas um mutante sobrevivente.
+
+A mutação que sobreviveu refere-se à **remoção da chamada `System.out.println(json)`** nas classes
+`EmailServiceAwsImpl` e `EmailServiceOciImpl`, linhas 36 e 37, respectivamente:
+
+```java
+System.out.println(json);
+```
+
+Essa linha foi exigida na descrição do teste técnico para exibir o e-mail serializado em JSON no console.
+No entanto, como essa ação não altera o comportamento funcional da aplicação e não é coberta por testes (por se tratar apenas de uma saída no console), o PIT considera o mutante como “sobrevivente”.
+
+✅ Importante: isso não representa uma falha de teste, mas sim um comportamento esperado do PIT, já que a impressão no console não é uma lógica testável nem afeta o resultado da aplicação.
 
 ## 🚀 Executando a Aplicação
 
@@ -202,3 +218,13 @@ Relatório PITest:
 ✅ Cobertura completa analisada com JaCoCo.
 
 ✅ Tratamento de erros e mensagens padronizadas.
+
+## 👨‍💻 Autor
+
+João Carlos Junior
+
+Desenvolvedor Full-stack
+
+📎 [GitHub](https://github.com/joaocarlosjunior)
+
+📎 [Linkedin](https://www.linkedin.com/in/joaocarlosjr/)
