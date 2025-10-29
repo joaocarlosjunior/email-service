@@ -70,7 +70,7 @@ com.joaocarlos.email_service
 
 Usado para **encapsular comportamentos variáveis** de envio e validação de e-mails.
 
-- **EmailServiceStrategy** → Define o serviço de e-mail a ser utilizado (AWS ou OCI), de acordo com o que estiver configurado em `application.yml`.
+- **EmailServiceStrategy** → Define a lógica para envio de e-mail, de acordo com serviço(AWS ou OCI) que estiver configurado em `application.yml`.
 - **EmailValidationStrategy** → Realiza as validações de acordo com as regras específicas do serviço selecionado.
 
 ### 🔹 **Factory Pattern**
