@@ -93,13 +93,14 @@ spring:
   application:
     name: email-service
   config:
-    import: configserver:http://localhost:8888
+    import: optional:configserver:http://localhost:8888
 
-email:
-  service: AWS  # Pode ser alterado para OCI dinamicamente
+mail:
+  integracao: AWS 
 ```
+Todos os detalhes de como utilizar o servidor de configuração estão no repositório: [config-server-teste-tecnico](https://github.com/joaocarlosjunior/config-server-teste-tecnico)
 
-Ao atualizar o valor e executar o endpoint /actuator/refresh, a aplicação passa automaticamente a utilizar o novo serviço.
+PS:. É possivel alterar o valor no próprio arquivo `application.yml`, alterado o `mail.integracao`, mas tendo a necessidade de reinicar a aplicação.
 
 ## 🧪 Estratégia de Testes
 
@@ -147,6 +148,9 @@ No entanto, como essa ação não altera o comportamento funcional da aplicaçã
 ✅ Importante: isso não representa uma falha de teste, mas sim um comportamento esperado do PIT, já que a impressão no console não é uma lógica testável nem afeta o resultado da aplicação.
 
 ## 🚀 Executando a Aplicação
+
+Requisitos:
+- Java 17
 
 1. Clonar o repositório
     ```
