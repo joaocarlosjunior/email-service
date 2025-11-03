@@ -171,7 +171,7 @@ Requisitos:
     ```
 
 ## 🔥 Testando o Endpoint
-#### POST /email/send
+#### POST /api/v1/email/send
 ```json
 {
   "recipient": "destinatario@email.com",
