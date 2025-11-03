@@ -22,7 +22,7 @@ public class EmailController {
         this.emailService = emailService;
     }
 
-    @PostMapping
+    @PostMapping("/send")
     public ResponseEntity<Void> sendEmail(@NotNull @Valid @RequestBody EmailDTO emailDTO) {
         emailService.sendEmail(emailDTO);
 
